@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    function factorial(num){
+      var total = num;
+      if (num === 0 || num === 1){
+        return 1;
+      }
+      while (num > 1){
+        num--;
+        total *= num;
+      }
+      return total;
+    }
+
+    var num = prompt("Number please: ");
+    console.log(factorial(num));
+
+    </script>
+  </body>
+</html>
